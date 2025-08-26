@@ -8,64 +8,73 @@ main{
 
 main > div{
     width: 90%;
-    /*background-color: blueviolet;*/
+    background-color: #DCF4FF;
     /*width: 50%;*/
-    height: 500px;
+    /*height: 500px;*/
     display: flex;
     /*justify-content: space-between;*/
     gap: 15px;
     flex-direction: column;
     align-items: center;
 }
+#cadastro>input{
+    display: none;
+}
 
-/* formulario */
-#formulario{
+#cadastro>label{
+    display: inline-block;
+    text-align: center;
+    background-color: purple;
+    border-radius: 10px;
+}
+/* cadastro */
+#cadastro{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
     padding: 3%;
-    gap: 3px;
-    /*background-color: blue;*/
+    gap: 5px;
+    background-color: #fafafa;
 }
 #secao-cadastro{
-    /*background-color: brown;*/
+
     /*width: 100px;*/
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
 }
-.estilo-formulario{
+.estilo-cadastro{
     border: var(--borda);
     width: 100%;
     max-width: 340px;
     background-color: var(--cor-branco);
 }
-#formulario > div{
+#cadastro > div{
     width: 100%;
 }
 
-#formulario > div > label {
+#cadastro > div > label {
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
     font-weight: 500;
     padding-bottom: 4px;
 }
 
-.botao-azul{
+.cadastro-botao-roxo{
     width: 100%;
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-branco);
 }
-#formulario > p{
-    text-transform: uppercase;
+#cadastro > p{
+    text-align: center;
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
 }
 
-#formulario >a, #secao-cadastro > p > a{
+#cadastro >a, #secao-cadastro > p > a{
     text-decoration: none;
     color: var(--cor-azul-claro1);
 }
@@ -89,4 +98,40 @@ main > div{
 #secao-instalacao img{
     width: 133px;
     height: 39px;
+}
+.cadastro-botao-roxo{
+    background-color: var(--cor-roxo-escuro);
+    border-radius: var(--borda-arredondada);
+     height: 40px;
+    border: none; /*Removendo a borda*/
+   
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+#cadastro > input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    border: var(--border);
+}
+.file{
+    display: none;
+    
+}
+.botao-azul{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao-file{
+    width: 100%;
+    margin-bottom: 20px;
+}
+form > p{
+    margin: 10px;
 }
