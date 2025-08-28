@@ -38,10 +38,7 @@ main > div{
     height: 60px;
 }
 .estilo-formulario{
-    border: var(--borda);
-    width: 100%;
     max-width: 340px;
-    background-color: var(--cor-branco);
 }
 #formulario > div{
     width: 100%;
@@ -89,4 +86,9 @@ main > div{
 #secao-instalacao img{
     width: 133px;
     height: 39px;
+}
+
+.file{
+    display: none;
+    
 }
