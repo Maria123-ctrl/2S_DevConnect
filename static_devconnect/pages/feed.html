@@ -39,7 +39,7 @@
                 <img src="../images/icone-coracao-preto.svg" alt="icones da empresa devconnect">
 
                 <a href="#">
-                    <img id="foto-perfil" src="../images/Rihanna-Barbadian-singer-Robyn-Fenty.webp"
+                    <img class="foto-perfil" src="../images/Rihanna-Barbadian-singer-Robyn-Fenty.webp"
                         alt="Foto de perfil">
                 </a>
             </div>
@@ -105,18 +105,55 @@
                 <h2>Publicação</h2>
 
                 <form action="">
-                    <textarea name="" id=""></textarea>
-                    <div>
-                        <div class="botao-azul">
+                    <textarea name="" id="" placeholder="Digite a descrição do post..."></textarea>
+                    <footer class="campo-botoes">
+                        <div class="campo-upload">
                             <label for="botao-file">Faça upload da sua imagem aqui...</label>
                             <input type="file" id="botao-file" class="file">
                         </div>
-                        <button type="submit" class="botao-azul">Entrar</button>
-                    </div>
+                        <button type="submit" class="botao-azul">Postar</button>
+                    </footer>
                 </form>
 
-              
+
             </section>
+
+            <section id="publicacoes">
+                <article class="card-publi">
+                    <header>
+                        <a href="#">
+                            <img class="foto-perfil" src="../images/Rihanna-Barbadian-singer-Robyn-Fenty.webp"
+                                alt="Foto de perfil">
+                                <span>RiRi_BadGirl</span>
+                        </a>
+                    </header>
+
+                    <figure>
+                        <img class="imagem-publicacao" src="../images/aaaaaaaa.webp" alt="">
+                        <figcaption class="descricao-publicacao">
+                            RiRi_BadGirl
+                            <p>Meus garotos!</p>
+                        </figcaption>
+                        <div class="interacoes-publicacao">
+                            <button>
+                                <img src="../images/icone-coracao-preto.svg" alt="">
+                            </button>
+
+                            <button>
+                                <img src="../images/icone-comentario-preto.svg" alt="">
+                            </button>
+
+                            <span>1 mi curtidas</span>
+                        </div>
+                        
+                        
+
+                    </figure>
+                    <button type="button">Ver mais comentários...</button>
+                </article>
+            </section>
+
+            
         </div>
     </main>
 </body>

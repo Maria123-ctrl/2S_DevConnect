@@ -9,9 +9,11 @@
     --cor-roxo-claro: #BFB3EB;
     --cor-roxo-escuro: #34344A;
     --cor-branco: #fafafa;
+    --cor-cinza-claro: #E5E5E5;
+    --cor-cinza-escuro: #656262;
 
 
-    --borda: 2px solid var(--cor-cinza-medio);
+    --borda: 5px solid var(--cor-azul-claro1);
     --borda-arredondada: 2px;
 
     --tamanho-fonte-lg: 20px;
@@ -28,6 +30,7 @@
     margin: 2px;
     box-sizing: border-box;
     /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e borda*/
+    outline-color: var(--cor-azul-claro1);
 }
 
 * {
@@ -65,7 +68,7 @@ input {
 
 .botao-azul {
 
-    background-color: var(--cor-azul-claro1);
+    background-color: var(--cor-roxo-escuro);
     border-radius: var(--borda-arredondada);
     /*height: 35px;*/
      border: none;
@@ -91,11 +94,18 @@ input {
     height: 35px;
 }
 
-#cadastro>label{
+.campo-upload>label{
     display: inline-block;
     text-align: center;
-    background-color: purple;
-    border-radius: 10px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    min-height: 35px;
+    padding: 5px;
+}
+
+.file{
+    display: none;
+    
 }
 
 /*cabeçalho*/
@@ -136,7 +146,7 @@ input {
     align-items: center;
 }
 
-#foto-perfil{
+.foto-perfil{
     width: 40px;
     height: 40px;
     object-fit: cover;
