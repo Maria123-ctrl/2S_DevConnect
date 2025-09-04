@@ -1,0 +1,66 @@
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.secao-perfil{
+    background-color: aqua;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#perfil{
+   background-color: blueviolet;
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   height: 200px;
+   width: 100%;
+   flex-wrap: wrap;
+   border-bottom: var(--borda);
+   
+}
+
+
+#foto-perfil{
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+}
+
+.informacoes-perfil{
+    background-color: purple;
+    display: flex;
+    flex-wrap: wrap;
+    width: 398px;
+    gap: 10px;
+    align-items: center;
+}
+.informacoes-perfil > span{
+    text-decoration: none;
+    width: 100%;
+}
+.informacoes-perfil > a{
+    text-decoration: none;
+     color: var(--cor-preto);
+}
+#perfil > div > div > a{
+    color: var(--cor-azul-claro01);
+}
+
+@media only screen and (max-width: 630px){
+    .informacoes-perfil{
+        flex-direction: column;
+        align-items: center;
+    }
+    .informacoes-perfil > span{
+        text-align: center;
+    }
+}
