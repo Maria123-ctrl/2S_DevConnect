@@ -2,26 +2,34 @@ main{
     min-height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     margin-top: 20px;
 }
 .secao-perfil{
-    background-color: aqua;
+    /*background-color: aqua;*/
     width: 90%;
     max-width: 900px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
+#icone-publicacoes{
+    text-decoration: none;
+    color: var(--cor-preto);
+    display: flex;
+    align-items: center;
+}
 #perfil{
-   background-color: blueviolet;
+   /*background-color: blueviolet;*/
    display: flex;
    justify-content: center;
    gap: 40px;
-   height: 200px;
+   /*height: 200px;*/
    width: 100%;
    flex-wrap: wrap;
    border-bottom: var(--borda);
+   flex
    
 }
 
@@ -36,7 +44,7 @@ main{
 }
 
 .informacoes-perfil{
-    background-color: purple;
+    /*background-color: purple;*/
     display: flex;
     flex-wrap: wrap;
     width: 398px;
@@ -54,7 +62,41 @@ main{
 #perfil > div > div > a{
     color: var(--cor-azul-claro01);
 }
-
+.card-publi {
+    width: 100%;
+    /* height: 400px; */
+    background-color: var(--cor-branco);
+}
+#publicacoes {
+    width: 100%;
+    height: 600px;
+}
+.card-publi > header{
+    /*height: 80px;*/
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+.card-publi > header > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-weight: 600;
+}
+.card-publi > figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.imagem-publicacao{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 500px;
+}
 @media only screen and (max-width: 630px){
     .informacoes-perfil{
         flex-direction: column;
@@ -63,4 +105,46 @@ main{
     .informacoes-perfil > span{
         text-align: center;
     }
+}
+.descricao-publicacao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--tamanho-font-md);
+    font-weight: 500;
+    padding: 0 3%;
+    order: 2;
+    flex-wrap: wrap;
+}
+.descricao-publicacao > p{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+.interacoes-publicacao {
+    width: 95px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 10px;
+    order: 1;
+    margin: 15px 3%;
+}
+.interacoes-publicacao > button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.interacoes-publicacao > span {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 500;
+    color: var(--cor-preto);
+}
+.card-publi > button {
+    margin: 15px 3%;
+    background-color: transparent;
+    border: none;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+    color: var(--cor-cinza-escuro);
+    cursor: pointer;
 }
