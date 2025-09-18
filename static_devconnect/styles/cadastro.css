@@ -8,7 +8,7 @@ main{
 
 main > div{
     width: 90%;
-    background-color: #DCF4FF;
+    /*background-color: #DCF4FF;*/
     /*width: 50%;*/
     /*height: 500px;*/
     display: flex;
