@@ -13,6 +13,12 @@ VALUES
 
 SELECT * FROM tabela_publicacao;
 
+INSERT INTO tabela_curtida(id_usuario, id_publicacao)
+VALUES
+(1,1);
+
+SELECT * FROM tabela_curtida;
+
 INSERT INTO tabela_comentario(id_usuario, id_publicacao, texto)
 VALUES
 (1,1,'O dia esta lindo hoje, meu Deus');
