@@ -24,8 +24,10 @@ VALUES
 (1,1,'O dia esta lindo hoje, meu Deus');
 
 
-
 SELECT * FROM tabela_comentario;
+
 
 INSERT INTO tabela_seguidor (idusuarioSeguidor, idusuarioSeguir)
 VALUES (1,1);
+
+SELECT * FROM tabela_seguidor;

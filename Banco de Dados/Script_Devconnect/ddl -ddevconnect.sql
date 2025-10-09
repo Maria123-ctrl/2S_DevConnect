@@ -55,3 +55,16 @@ CREATE TABLE tabela_curtida(
 );
 
 SELECT * FROM tabela_curtida;
+
+CREATE TABLE tabela_seguidor(
+	idusuarioSeguir		INT NOT NULL,
+	idusuarioSeguidor	INT NOT NULL,
+
+	PRIMARY KEY(IdUsuarioSeguir, IdUsuarioSeguidor)
+);
+SELECT * FROM tabela_seguidor;
+
+ALTER TABLE tabela_curtida
+ADD UNIQUE(id_usuario, id_publicacao) 
+
+
